@@ -173,3 +173,43 @@ header .ti-heart-broken {
     /* transform: translate(-20px, 0); - Dịch chuyển sang trái */
     /* transform: translate(0, -20px); - Dịch chuyển lên trên */
 }
+/* footer */
+.footer-contact .row {
+    /* display: flex; */
+    justify-content: space-evenly;
+}
+.footer-contact .row ul {
+    font-size: 20px;
+    border: 1px dashed #ccc;
+    padding: 30px 12px ;
+    border-radius: 10px;
+    width: 120%;
+}
+.footer-contact .row ul:hover {
+    background-color: #d4cacf;
+}
+.contact-TH li i {
+    margin-right: 10px;
+}
+.footer-menu {
+    text-align: center;
+}
+.footer-menu ul {
+    display: flex;
+    justify-content:center;
+}
+.footer-menu ul li {
+    margin: 20px 10px;
+    font-size: 20px;
+}
+.footer-menu ul li:hover {
+    color : red;
+    font-size :20px
+}
+.copyright {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px 0;
+    font-family: 'Times New Roman', Times, serif
+}

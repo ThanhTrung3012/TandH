@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Dancing Script", cursive;
+}
+/* header */
+.active {
+    background-color: white;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.3s ease;
+    height: 100px;
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color : unset
+}
+header .container {
+    height: 100px;
+}
+header .container .row {
+    height: 100px;
+}
+.container{
+    /* background-color: antiquewhite; */
+    max-width: 1000px;
+    margin: auto ;
+    
+}
+.row {
+    display: flex;
+}
+header .container .row {
+    justify-content: space-between;
+    align-items: center;
+}
+.row a {
+    width: 100px;
+}
+.logo1{
+    width: 220%;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    /* font-family: "Dancing Script", cursive; */
+    font-size: 30px;
+    padding: 10px 20px ;
+    transition: all 0.3s ease;
+}
+header nav ul li:hover{
+    border-top: 1px solid black;
+    /* background-color: rgba(231,277,277); */
+}
+header .ti-heart-broken {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Banner */
+.banner {
+    padding-top: 250px;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+}
+.banner-left img {
+    max-width: 350px;
+    border-radius: 30%;
+    filter: drop-shadow(10px 7px 10px orange);
+}
+.banner .row {
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    column-gap: 100px;
+}
+.banner-right h1,h2,h3 {
+    font-size: 35px;
+}
+.banner-right-btn {
+    font-size: 30px;
+}
+.banner-left-name{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+/* About */
+.about {
+    padding: 30px;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.about .row {
+    justify-content: space-between;
+    /* khoảng cách giữa các cột với nhau */
+    column-gap: 30px;
+}
+.about-img , .about-text {
+    /* phần tử sẽ chiếm không gian một cách linh hoạt, mở rộng hoặc thu nhỏ tùy theo không gian còn lại trong container. */
+    flex: 1; 
+}
+.ti-drupal, .ti-github {
+    display: block;
+    /* text-align: center; */
+    font-size: 30px;
+}
+.inf-top {
+    display: flex;
+    justify-content: space-between;
+}
+.inf-top1 {
+    padding: 50px;
+    text-align: center;
+}
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+.inf-top1 {
+    flex : 1;
+    /* chỉnh chiều dài của các h/a = nhau , sau đó sử dụng width : auto */
+    align-items: stretch;
+}
+.inf-top1 img {
+    width: auto;
+    height: 250px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+.inf-top1 h2, h4 {
+    font-size: 15px;
+}
+.text-bot ul {
+    font-size: 30px;
+    text-align: center;
+}
+.text-bot ul li{
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+}
+
+/* Couple */
+.couple-img {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+.couple-img img {
+    height: 300px; /* Chiều cao mong muốn */
+    object-fit: cover; /* Giữ tỷ lệ và cắt phần dư thừa nếu cần */
+    width: 200px; /* Đảm bảo giữ đúng tỷ lệ hình ảnh */
+    border-radius: 20px;
+    filter: drop-shadow(10px 7px 10px orange);
+    transition: transform 0.3s ease; /* Tạo hiệu ứng chuyển động mượt mà */
+}
+.couple-img img:hover {
+    transform: translateX(20px); /* Dịch chuyển ảnh sang phải 20px */
+    /* Có thể dịch chuyển theo các hướng khác nhau */
+    /* transform: translateY(20px); - Dịch chuyển xuống */
+    /* transform: translate(-20px, 0); - Dịch chuyển sang trái */
+    /* transform: translate(0, -20px); - Dịch chuyển lên trên */
+}

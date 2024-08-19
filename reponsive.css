@@ -1,0 +1,48 @@
+/* Mobile $ tablet : width < 1024px */
+@media only screen and (max-width : 63.9375em) {
+
+    
+}
+
+/* Mobile : width < 740px */
+header .ti-menu {
+    font-size: 22px;
+    display: none;
+}
+header nav .active {
+    right: 0;
+}
+@media only screen and (max-width :46.1875em) {
+    header .ti-menu {
+        display: block  ;
+    }
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 100%;
+        background-color: bisque;
+        width: 350px;
+        height: 100vh;
+        transition: all 0.3 ease;
+    }
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 0;
+    }
+    .banner .row {
+        flex-direction: column;
+    }
+    .about .row{
+        flex-direction: column;
+    }
+    .Couple .couple-img {
+        flex-direction: column;
+    }
+}
+
+/* Tablet : width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and ( max-width: 63.9375em ) 
+ {
+    
+}
